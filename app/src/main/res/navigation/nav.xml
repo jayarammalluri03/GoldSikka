@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav"
+    app:startDestination="@id/homeFragment">
+
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.jayaram.goldsikka.ui.view.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment2_to_addEditFragment"
+            app:destination="@id/addEditFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addEditFragment"
+        android:name="com.jayaram.goldsikka.ui.view.AddEditFragment"
+        android:label="AddEditFragment" >
+        <argument
+            android:name="noteID"
+            app:argType="integer"
+            android:defaultValue="-1"/>
+    </fragment>
+
+</navigation>
