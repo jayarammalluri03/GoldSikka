@@ -17,7 +17,7 @@ Real-time search functionality
 
 Automatic UI refresh using Kotlin Flow
 
-MVVM clean architecture implementation
+MVVM architecture implementation
 
 Dark & Light theme support
 
